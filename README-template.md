@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Screenshot
 
-[](/design/preview.jpg)
+[](/preview.jpg)
 
 ### Links
 
