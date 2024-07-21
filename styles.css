@@ -5,11 +5,16 @@
 
 body {
     background-color: black;
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:   "slnt" 0;
 }
 
 .social-container {
     max-width: 80%;
-    height: 190vw;
+    height: 180vw;
     margin: 55px auto;
     background-color: rgb(56, 55, 55);
     border-radius: 9px;
@@ -26,7 +31,6 @@ body {
 
 h1 {
     color: white;
-    font-family: fangsong;
     text-align: center;
     position: relative;
     top: 65px;
@@ -39,7 +43,7 @@ h1 {
     text-align: center;    
 }
 
-p {
+.intro {
     color: white;
     text-align: center;
     position: relative;
@@ -71,14 +75,14 @@ a {
 }
 
 .attribution p{
-    color: blue;
+    color: #a5a5af;
     position: relative;
     top: -30px;
     right: 80px;
 }
 
 .attribution a {
-    color: burlywood;
+    color: #978383;
     text-decoration: none;
     font-size: 19px;
     position: relative;
@@ -97,11 +101,83 @@ section:hover {
     border-radius: 5px;
     color: black;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+ 
+    .social-container {
+        max-width: 40%;
+        height: 90vw;
+        margin: 55px auto;
+        background-color: rgb(56, 55, 55);
+        border-radius: 9px;
+    }
+
+    /* #avatar {
+        width: 25%;
+        display: flex;
+        margin: 0 auto;
+        position: relative;
+        top: 6vw;
+        border-radius: 50px;    
+    } */
+
+    h1 {
+        color: white;
+            text-align: center;
+        position: relative;
+        top: 110px;
+    }
+    
+    #para {
+        color: #d5d56b;
+        position: relative;
+        top: 119px;
+        text-align: center;    
+    }
+
+    .intro {
+        color: white;
+        text-align: center;
+        position: relative;
+        top: 150px;
+    }
+
+    section {
+        width: 85%;
+        height: 5.5vw;
+        background-color: #717170;
+        margin: 20px auto;
+        position: relative;
+        top: 155px;
+        border-radius: 7px;
+    }
+    
+    .attribution a {
+        color: #978383;
+        text-decoration: none;
+        font-size: 19px;
+        position: relative;
+        left: 360px;
+    }
+ 
+    section:hover {
+        border: 2px solid black;
+        background-color: chocolate;    
+    }
+
+    .attribution a:hover {
+        background-color: #c8eaaa;
+        padding: 4px 25px 8px 22px;
+        border-radius: 5px;
+        color: black;
+    }
+}
+
 @media screen and (min-width: 1024px) {
  
     .social-container {
         max-width: 22%;
-        height: 49vw;
+        height: 51vw;
         margin: 55px auto;
         background-color: rgb(56, 55, 55);
         border-radius: 9px;
@@ -118,8 +194,7 @@ section:hover {
 
     h1 {
         color: white;
-        font-family: fangsong;
-        text-align: center;
+            text-align: center;
         position: relative;
         top: 105px;
     }
@@ -131,7 +206,7 @@ section:hover {
         text-align: center;    
     }
 
-    #intro {
+    .intro {
         color: white;
         text-align: center;
         position: relative;
@@ -149,7 +224,7 @@ section:hover {
     }
     
     .attribution a {
-        color: burlywood;
+        color: #978383;
         text-decoration: none;
         font-size: 19px;
         position: relative;
@@ -168,3 +243,87 @@ section:hover {
         color: black;
     }
 }
+
+@media screen and (width: 1024px ) {
+ 
+    .social-container {
+        max-width: 30%;
+        height: 66vw;
+    }
+
+    .intro {
+        position: relative;
+        top: 140px;
+    }
+
+    section {
+        height: 4.5vw;
+    }
+    
+    .attribution a {
+        position: relative;
+        left: 495px;
+    }
+ 
+}
+
+@media screen and (width: 425px) {
+       
+    .social-container {
+        height: 172vw;
+    }
+
+    .attribution a {
+        position: relative;
+        left: 198px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 19px;
+        position: relative;
+        left: 107px;
+        top: 12px;
+    }
+
+    #two a {
+        position: relative;
+        left: 74px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+       
+    .social-container {
+        height: 200vw;
+    }
+
+    .attribution a {
+        position: relative;
+        left: 142px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 19px;
+        position: relative;
+        left: 70px;
+        top: 9px;
+    }
+
+    #two a {
+        position: relative;
+        left: 36px;
+    }
+}
+
+@media screen and (width: 1440px) {
+    .attribution a {
+        position: relative;
+        left: 700px;
+    }
+}
+
+
